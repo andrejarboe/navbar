@@ -1,0 +1,24 @@
+.hero-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* set the height of the parent container to the height of the viewport */
+}
+.slide {
+	width: 50%;
+	height: 50%;
+        text-align: center;
+    transition: transform 0.5s ease-in-out; /* transition the transform property over 0.5s with an ease-in-out timing function */
+    /* other styles */
+}
+.slide img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.slide.next-slide {
+    transform: translateX(-100%); /* move the slide to the left by 100% of its width */
+}
+.slide.prev-slide {
+    transform: translateX(100%); /* move the slide to the right by 100% of its width */
+}
